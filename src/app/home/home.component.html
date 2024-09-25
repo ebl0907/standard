@@ -1,0 +1,11 @@
+<header></header>
+<body>
+<div>
+  <h1>Welcome to the App!</h1>
+  <p *ngIf="auth.isAuthenticated()">User is authenticated</p>
+  <p *ngIf="!auth.isAuthenticated()">User is not authenticated</p>
+  <p *appOnlyAdmin="false">User is not admin</p>
+  <p>{{"exampleMessage" | translate}}</p>
+</div>
+</body>
+<footer></footer>
